@@ -1,0 +1,114 @@
+* { box-sizing: border-box;}
+/* * { outline: 1px solid red;} */
+
+:root {
+  --color-main-bg: black;
+  --color-main-text: white;
+  --color-accent: blue;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  background-color: var(--color-main-bg);
+  font-family: 'Montserrat', sans-serif;
+}
+
+body * {
+  color: var(--color-main-text);
+}
+
+
+
+header {
+  width: 100vw;
+  text-align: center;
+
+  position: fixed;
+  top: 0;
+  height: 100px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#header-title {
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.5em;
+}
+
+#header-title > a {
+  color: var(--color-main-text);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  font-family: 'Titan One', cursive;
+  color: var(--color-accent);
+}
+
+nav a:hover {
+  border-bottom: 5px solid var(--color-accent);
+  margin-bottom: -5px
+}
+
+
+
+main {
+  width: min(1600px, 90%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section {
+  min-height: 100vh;
+  width: fit-content;
+}
+
+#home {
+  padding-top: 20vh;
+  vertical-align: middle;
+  font-size: 2rem;
+  position: relative;
+}
+
+#home h1,
+#home h3,
+#home h5 {
+  margin: 5px 0;
+}
+
+#main-title {
+  color: var(--color-accent);
+}
+
+#home p {
+  position: absolute;
+  bottom: 20px;
+
+  width: 100%;
+
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#home p span {
+  font-size: 2.5em;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  #home h1,
+  #home h3,
+  #home h5 {
+    font-size: 2em;
+  }
+}
