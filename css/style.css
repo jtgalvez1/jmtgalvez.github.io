@@ -11,11 +11,8 @@ body {
   margin: 0;
   width: 100vw;
   background-color: var(--color-main-bg);
-  font-family: 'Montserrat', sans-serif;
-}
-
-body * {
   color: var(--color-main-text);
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -107,6 +104,48 @@ main > section {
 
 
 
+#about {
+  width: 100%;
+}
+
+#technologies {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.technology {
+  flex: 0 0 80px;
+  padding: 1em;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.technology:hover {
+  transform: scale(1.1);
+}
+
+.technology > svg {
+  height: 50px;
+  display: none;
+}
+
+#education {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  width: fit-content;
+}
+
+
 @media screen and (min-width: 768px) {
   header {
     height: 8vh;
@@ -117,4 +156,25 @@ main > section {
   #home h5 {
     font-size: 2em;
   }
+}
+
+
+
+.card {
+  background-color: #fefefe;
+  color: black;
+  
+  padding: 1em;
+  border-radius: 0.5em;
+
+  box-shadow: 5px 5px #cdcdcd;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-text svg {
+  height: 1em;
+  width: auto;
 }
