@@ -80,7 +80,7 @@ section > h1 {
 
 #home {
   height: 90vh;
-  padding-top: 15vh;
+  margin-top: 15vh;
   vertical-align: middle;
   font-size: 2rem;
   position: relative;
