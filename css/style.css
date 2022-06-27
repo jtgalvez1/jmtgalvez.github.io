@@ -15,11 +15,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-section > h1 {
-  color: var(--color-accent);
-  font-size: 2rem;
-}
-
 
 
 header {
@@ -60,7 +55,7 @@ nav a:hover {
 
 
 main {
-  width: min(1600px, 80%);
+  width: min(1200px, 80%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -73,6 +68,13 @@ main > section {
   width: 100%;
   margin-bottom: 10vh;
 }
+
+section > h1 {
+  color: var(--color-accent);
+  font-size: 2rem;
+}
+
+
 
 #home {
   height: 90vh;
@@ -140,6 +142,10 @@ main > section {
   display: none;
 }
 
+.technology:hover {
+  transform: scale(1.1);
+}
+
 #education {
   display: grid;
   grid-template-columns: 1fr;
@@ -150,8 +156,12 @@ main > section {
 
 @media screen and (min-width: 768px) {
 
+  #technologies {
+    flex-flow: row nowrap;
+  }
+
   section > h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   header {
@@ -161,7 +171,7 @@ main > section {
   #home h1,
   #home h3,
   #home h5 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 
