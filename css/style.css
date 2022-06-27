@@ -124,7 +124,6 @@ section > h1 {
 }
 
 .technology {
-  flex: 0 0 80px;
   padding: 1em;
   border-radius: 5px;
   background-color: white;
