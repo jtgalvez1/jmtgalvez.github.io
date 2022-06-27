@@ -82,7 +82,7 @@ section > h1 {
   height: 90vh;
   padding-top: 15vh;
   vertical-align: middle;
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
 }
 
@@ -99,16 +99,16 @@ section > h1 {
 
 #home p {
   position: absolute;
-  bottom: 50px;
+  bottom: 2em;
 
   width: 100%;
 
-  font-size: 0.5em;
+  font-size: 0.3em;
   text-align: center;
 }
 
 #home p span {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 
@@ -159,6 +159,12 @@ section > h1 {
 
   #home {
     margin-top: 5vh;
+    font-size: 1.5rem;
+  }
+
+  #home {
+    bottom: 50px;
+    font-size: 2em;
   }
 
   #technologies {
