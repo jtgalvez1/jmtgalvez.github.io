@@ -206,6 +206,29 @@
 
     <section id="contact">
       <h1>Contacts</h1>
+      <form onsubmi="mailto:jmtgalvez@gmail.com">
+        <fieldset>
+          <legend>Email Me</legend>
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+  
+          <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required />
+          </div>
+  
+          <div class="form-field">
+            <label for="msg">Message:</label>
+            <textarea name="msg" id="msg" required />
+          </div>
+
+          <input type="submit" value="Send Message"/>
+        </fieldset>
+
+      </form>
+
     </section>
   </main>
 </body>

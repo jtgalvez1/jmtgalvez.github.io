@@ -19,27 +19,6 @@ body {
 
 
 
-div[id$="-grid"] { display: grid;}
-
-div[class$="-card"] {
-  background-color: #fefefe;
-  color: black;
-  border-radius: 0.5em;
-
-  box-shadow: 5px 5px #cdcdcd;
-  overflow: hidden;
-}
-
-div[class$="-card-text"] {
-  padding: 0.5em 1em;
-}
-
-div[class$="-card"]:hover {
-  transform: scale(1.1);
-}
-
-
-
 header {
   width: 100vw;
   text-align: center;
@@ -186,7 +165,26 @@ section > h1 {
 }
 
 
+
+.roject-card {
+  background-color: #fefefe;
+  color: black;
+  border-radius: 0.5em;
+
+  box-shadow: 5px 5px #cdcdcd;
+  overflow: hidden;
+}
+
+.project-card-text {
+  padding: 0.5em 1em;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
 #projects-grid {
+  display: grid;
   gap: 2em;
 }
 
