@@ -2,8 +2,8 @@
 /* * { outline: 1px solid red;} */
 
 :root {
-  --color-main-bg: black;
-  --color-main-text: white;
+  --color-main-bg: #131313;
+  --color-main-text: #fefefe;
   --color-accent: blue;
 }
 
@@ -15,6 +15,27 @@ body {
   background-color: var(--color-main-bg);
   color: var(--color-main-text);
   font-family: 'Montserrat', sans-serif;
+}
+
+
+
+div[id$="-grid"] { display: grid;}
+
+div[class$="-card"] {
+  background-color: #fefefe;
+  color: black;
+  border-radius: 0.5em;
+
+  box-shadow: 5px 5px #cdcdcd;
+  overflow: hidden;
+}
+
+div[class$="-card-text"] {
+  padding: 0.5em 1em;
+}
+
+div[class$="-card"]:hover {
+  transform: scale(1.1);
 }
 
 
@@ -93,6 +114,7 @@ section > h1 {
 
 #main-title {
   color: var(--color-accent);
+  font-size: 1.5em;
 }
 
 #home p {
@@ -127,8 +149,8 @@ section > h1 {
   width: fit-content;
   padding: 0.5em 1em;
   border-radius: 5px;
-  background-color: white;
-  color: black;
+  background-color: var(--color-main-text);
+  color: var(--color-main-bg);
   font-weight: 500;
 
   display: flex;
@@ -149,6 +171,63 @@ section > h1 {
   grid-template-columns: 1fr;
   gap: 2em;
   width: fit-content;
+  padding: 2em;
+  background-color: var(--color-main-text);
+  color: var(--color-main-bg);
+}
+
+#education * {
+  margin: 0;
+}
+
+.educ-text svg {
+  height: 1em;
+  width: auto;
+}
+
+
+#projects-grid {
+  gap: 2em;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project-card:hover .project-card-title {
+  color: var(--color-accent);
+}
+
+.project-technologies {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+}
+
+.project-technology {
+  width: fit-content;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: var(--color-main-bg);
+  color: var(--color-main-text);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.project-card-link {
+  padding: 1em;
+  width: 100%;
+
+  border-top: 1px solid black;
+
+  text-decoration: none;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.project-card-link:hover {
+  background-color: #cdcdcd;
 }
 
 
@@ -181,6 +260,10 @@ section > h1 {
   #home h5 {
     font-size: 1.5em;
   }
+
+  #projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 1224px) {
@@ -195,25 +278,4 @@ section > h1 {
   #technologies:hover > .h-4 { height: 8em;}
   #technologies:hover > .h-5 { height: 10em;}
   
-}
-
-
-
-.card {
-  background-color: #fefefe;
-  color: black;
-  
-  padding: 1em;
-  border-radius: 0.5em;
-
-  box-shadow: 5px 5px #cdcdcd;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.card-text svg {
-  height: 1em;
-  width: auto;
 }
