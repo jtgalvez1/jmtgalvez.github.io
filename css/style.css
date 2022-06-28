@@ -141,10 +141,6 @@ section > h1 {
   display: none;
 }
 
-/* .technology:hover {
-  transform: scale(1.1);
-} */
-
 #education {
   display: grid;
   grid-template-columns: 1fr;
@@ -155,8 +151,12 @@ section > h1 {
   color: var(--color-main-bg);
 }
 
-#education * {
+#education > * {
   margin: 0;
+}
+
+.educ > * {
+  margin: 0 0 5px;
 }
 
 .educ-text svg {
@@ -166,7 +166,7 @@ section > h1 {
 
 
 
-.roject-card {
+.project-card {
   background-color: #fefefe;
   color: black;
   border-radius: 0.5em;
@@ -229,6 +229,43 @@ section > h1 {
 }
 
 
+#contact,
+#contact fieldset,
+.form-field {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+fieldset > *,
+.form-field > * {
+  width: 100%;
+}
+
+#contact fieldset {
+  padding: 0.5em;
+  gap: 1em;
+}
+
+.form-field {
+  gap: 0.5em;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+input {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-main-text);
+  font-weight: 700;
+}
+
 @media screen and (min-width: 768px) {
 
   #home {
@@ -261,6 +298,14 @@ section > h1 {
 
   #projects-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  #contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact > h1 {
+    grid-column: 1 / -1;
   }
 }
 
