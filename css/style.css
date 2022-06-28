@@ -113,7 +113,6 @@ section > h1 {
 
 #about {
   width: 100%;
-  font-size: 0.5em;
 }
 
 #technologies {
@@ -191,10 +190,10 @@ section > h1 {
     align-items: flex-start;
   }
 
-  #technologies:hover > .h-2 { height: 50px;}
-  #technologies:hover > .h-3 { height: 75px;}
-  #technologies:hover > .h-4 { height: 100px;}
-  #technologies:hover > .h-5 { height: 125px;}
+  #technologies:hover > .h-2 { height: 4em;}
+  #technologies:hover > .h-3 { height: 6em;}
+  #technologies:hover > .h-4 { height: 8em;}
+  #technologies:hover > .h-5 { height: 10em;}
   
 }
 
