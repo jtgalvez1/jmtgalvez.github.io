@@ -307,18 +307,3 @@ input[type="submit"] {
   #contact > h1 {
     grid-column: 1 / -1;
   }
-}
-
-@media screen and (min-width: 1224px) {
-  
-  #technologies:hover {
-    height: 150 px;
-    align-items: flex-start;
-  }
-
-  #technologies:hover > .h-2 { height: 4em;}
-  #technologies:hover > .h-3 { height: 6em;}
-  #technologies:hover > .h-4 { height: 8em;}
-  #technologies:hover > .h-5 { height: 10em;}
-  
-}
